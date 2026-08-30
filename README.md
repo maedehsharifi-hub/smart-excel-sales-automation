@@ -13,53 +13,35 @@ A Python automation tool that reads multiple Excel sales files, validates and cl
 - Handles missing price values
 - Calculates total value for each order
 - Generates sales statistics
-- Creates a professional Excel report
-- Adds Excel filters and formatting
+- Creates a formatted Excel report
+- Adds Excel filters
+- Automatically formats numeric values
+- Generates separate Cleaned Data and Summary sheets
 
-## Technologies
+## Technologies Used
 
 - Python
 - Pandas
 - OpenPyXL
-- Excel
+- Microsoft Excel
+- Git
+- GitHub
 
-## Input Format
+## Project Structure
 
-Excel files should contain the following columns:
-
-- Name
-- Email
-- Product
-- Quantity
-- Price
-
-## Output
-
-The program generates:
-
-output/final_sales_report.xlsx
-
-The report contains two sheets:
-
-### Cleaned Data
-
-Contains the combined and cleaned sales records.
-
-### Summary
-
-Contains:
-
-- Original rows
-- Duplicates removed
-- Missing prices removed
-- Total orders
-- Total sales
-- Average order value
-- Highest order value
-
-## How to Run
-
-Install dependencies:
-
-```bash
-pip install pandas openpyxl
+```text
+smart-excel-sales-automation/
+│
+├── input/
+│   ├── sales_january.xlsx
+│   └── sales_february.xlsx
+│
+├── output/
+│   └── final_sales_report.xlsx
+│
+├── screenshots/
+│   └── sales_summary.png
+│
+├── main.py
+├── README.md
+└── .gitignore
