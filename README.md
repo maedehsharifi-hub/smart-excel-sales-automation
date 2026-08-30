@@ -45,3 +45,8 @@ smart-excel-sales-automation/
 ├── main.py
 ├── README.md
 └── .gitignore
+## Example Output
+
+The generated Excel report includes a formatted sales summary.
+
+![Sales Summary](screenshots/sales_summary.png)
